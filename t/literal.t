@@ -3,7 +3,8 @@
 use strict;
 use Test::More;
 
-use_ok('Attean');
+use_ok('AtteanX::Compatibility::Trine');
+
 use_ok('Attean::Literal');
 
 can_ok('Attean::Literal', 'literal_value');

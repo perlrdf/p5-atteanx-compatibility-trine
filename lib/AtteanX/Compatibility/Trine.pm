@@ -2,9 +2,13 @@ use 5.010001;
 use strict;
 use warnings;
 
+package AtteanX::Compatibility::Trine;
+
+use Attean;
+
 package Attean::IRI {
 	sub uri {
-		my $self	= shift;
+		my $self = shift;
 		return $self->abs;
 	}
 }
@@ -14,7 +18,12 @@ package Attean::Blank {
     my $self = shift;
     return $self->value;
   }
-}
+};
+
+package Attean::Literal {
+	sub has_datatype { return 1 }
+
+};
 
 1;
 
