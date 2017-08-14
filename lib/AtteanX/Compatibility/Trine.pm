@@ -9,8 +9,6 @@ package Attean::IRI {
 	}
 }
 
-our $AUTHORITY = 'cpan:KJETILK';
-our $VERSION   = '0.001';
 
 1;
 
