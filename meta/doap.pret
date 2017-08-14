@@ -1,18 +1,26 @@
 # This file contains general metadata about the project.
 
 @prefix : <http://usefulinc.com/ns/doap#>.
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#>.
 
 `AtteanX-Compatibility-Trine`
 	:programming-language "Perl" ;
 	:shortdesc            "Compatibility layer between RDF::Trine and Attean";
 	:homepage             <https://metacpan.org/release/AtteanX-Compatibility-Trine>;
 	:download-page        <https://metacpan.org/release/AtteanX-Compatibility-Trine>;
-	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=AtteanX-Compatibility-Trine>;
-#	:repository           [ a :GitRepository; :browse <https://github.com/kjetilk/p5-atteanx-compatibility-trine> ];
+        dc:identifier "AtteanX::Compatibility::Trine"^^<http://ontologi.es/doap-deps#CpanId> ;    
+	:bug-database         <https://github.com/kjetilk/p5-atteanx-compatibility-trine/issues>;
+        :repository           [ a :GitRepository; 
+                                :browse <https://github.com/kjetilk/p5-atteanx-compatibility-trine> ;
+                                prov:has_provenance <http://git2prov.org/git2prov?giturl=https%3A%2F%2Fgithub.com%2Fkjetilk%2Fp5-atteanx-compatibility-trine&serialization=PROV-O#>
+                              ];
+        :category             <http://dbpedia.org/resource/Category:Semantic_Web>;
 	:created              2017-08-14;
 	:license              <http://dev.perl.org/licenses/>;
-	:maintainer           cpan:KJETILK;
-	:developer            cpan:KJETILK.
+	:maintainer           <http://www.kjetil.kjernsmo.net/foaf#me>;
+        :developer            <http://www.kjetil.kjernsmo.net/foaf#me>;
+        :helper               <http://kasei.us/about/foaf.xrdf#greg>.
 
 <http://dev.perl.org/licenses/>
 	dc:title  "the same terms as the perl 5 programming language system itself".

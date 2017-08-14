@@ -4,6 +4,7 @@
 
 `AtteanX-Compatibility-Trine`
 	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
+        :runtime-requirement    [ :on "Attean"^^:CpanId ];
 	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
 	.
 
