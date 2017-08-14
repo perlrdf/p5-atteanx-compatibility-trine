@@ -7,23 +7,22 @@ package AtteanX::Compatibility::Trine;
 use Attean;
 
 package Attean::IRI {
-	sub uri {
-		my $self = shift;
-		return $self->abs;
-	}
+	sub uri { return $_[0]->abs }
 }
 
 package Attean::Blank {
-  sub blank_identifier {
-    my $self = shift;
-    return $self->value;
-  }
-};
+  sub blank_identifier { return $_[0]->value }
+}
 
 package Attean::Literal {
 	sub has_datatype { return 1 }
 
-};
+	sub literal_value { return $_[0]->value }
+
+	sub literal_value_language { return $_[0]->language }
+
+	sub literal_datatype { return $_[0]->datatype->as_string }
+}
 
 1;
 
