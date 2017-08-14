@@ -4,6 +4,9 @@ use warnings;
 
 package AtteanX::Compatibility::Trine;
 
+our $AUTHORITY = 'cpan:KJETILK';
+our $VERSION   = '0.001';
+
 use Attean;
 
 package Attean::IRI {
@@ -42,8 +45,8 @@ AtteanX::Compatibility::Trine - Compatibility layer between RDF::Trine and Attea
 
 =head1 BUGS
 
-Please report any bugs to
-L<http://rt.cpan.org/Dist/Display.html?Queue=AtteanX-Compatibility-Trine>.
+Please report any bugs or things you miss from L<RDF::Trine> here:
+L<https://github.com/kjetilk/p5-atteanx-compatibility-trine/issues>.
 
 =head1 SEE ALSO
 
