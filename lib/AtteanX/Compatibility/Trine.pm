@@ -41,7 +41,30 @@ AtteanX::Compatibility::Trine - Compatibility layer between RDF::Trine and Attea
 
 =head1 SYNOPSIS
 
+In modules that have old L<RDF::Trine> methods, but otherwise uses L<Attean>, just go:
+
+  use AtteanX::Compatibility::Trine;
+
+
 =head1 DESCRIPTION
+
+For now, only certain methods of L<RDF::Trine> nodes are supported. They are added to the respective L<Attean> terms by this module. They are:
+
+=over
+
+=item * C<Attean::Blank::blank_identifier>
+
+=item * C<Attean::IRI::uri>
+
+=item * C<Attean::Literal::literal_value>
+
+=item * C<Attean::Literal::literal_value_language>
+
+=item * C<Attean::Literal::has_datatype>
+
+=item * C<Attean::Literal::literal_datatype>
+
+=back
 
 =head1 BUGS
 
