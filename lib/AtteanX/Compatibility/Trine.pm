@@ -9,6 +9,12 @@ package Attean::IRI {
 	}
 }
 
+package Attean::Blank {
+  sub blank_identifier {
+    my $self = shift;
+    return $self->value;
+  }
+}
 
 1;
 
