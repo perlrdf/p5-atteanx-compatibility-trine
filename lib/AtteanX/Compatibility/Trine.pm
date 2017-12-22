@@ -73,6 +73,9 @@ L<https://github.com/kjetilk/p5-atteanx-compatibility-trine/issues>.
 
 =head1 SEE ALSO
 
+For a compatibility layer the other direction (i.e. backwards
+compatibility), see L<RDF::TrineX::Compatibility::Attean>.
+
 =head1 AUTHOR
 
 Kjetil Kjernsmo E<lt>kjetilk@cpan.orgE<gt>.
