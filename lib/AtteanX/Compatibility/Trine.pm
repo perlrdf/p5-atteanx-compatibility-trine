@@ -5,7 +5,7 @@ use warnings;
 package AtteanX::Compatibility::Trine;
 
 our $AUTHORITY = 'cpan:KJETILK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use Attean;
 
