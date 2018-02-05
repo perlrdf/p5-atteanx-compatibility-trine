@@ -4,3 +4,12 @@
 	issued  2017-08-14;
 	label   "Initial release".
 
+`AtteanX-Compatibility-Trine 0.002 cpan:KJETILK`
+    issued  2018-02-05;
+    changeset [
+        item [ label "Fix the langString error coded to Attean."@en ;
+            a dcs:Bugfix ;
+            ]
+        ] .
+        
+            
