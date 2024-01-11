@@ -14,7 +14,7 @@ package Attean::IRI {
 }
 
 package Attean::Blank {
-  sub blank_identifier { return $_[0]->value }
+	sub blank_identifier { return $_[0]->value }
 }
 
 package Attean::Literal {
